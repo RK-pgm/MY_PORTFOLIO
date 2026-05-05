@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -22,22 +24,33 @@
     </nav>
 </header>
     <section id="ABOUT">
+        <div data-aos="fade-right"
+             data-aos-offset="300"
+            data-aos-easing="ease-out-back">
         <div class="section-heading">
             <span class="section-num">01 //</span>
             <h1>About Me</h1>
         </div>
-    <div class="about-grid">
-        <div class="about-left">
-        <p>I am interested in all areas of programming and I want to study them further. I enjoy writing code and designing systems. I have a basic foundation in HTML, Python, C++, and CSS. I discovered my passion about six months ago, and since then I have dedicated myself to coding because, for me, working with modern technology brings happiness.
-           Although I have not been learning for a long time, I have already participated in several competitions and received some awards. In the future, I hope to become a full-stack web developer or a cybersecurity specialist so that I can work in a field I truly enjoy. Even though there may be pressure in this career, I am determined to pursue it.
-             I am a focused and disciplined person who works consistently and takes responsibility for assigned tasks. I also enjoy exploring new and unique ideas. I am confident that if I continue to develop my skills, I will achieve my goals.</p>
-    </div>
+        </div>
+        <div class="about-grid">
+            <div data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
+            <div class="about-left">
+            <p>I am interested in all areas of programming and I want to study them further. I enjoy writing code and designing systems. I have a basic foundation in HTML, Python, C++, and CSS. I discovered my passion about six months ago, and since then I have dedicated myself to coding because, for me, working with modern technology brings happiness.
+                Although I have not been learning for a long time, I have already participated in several competitions and received some awards. In the future, I hope to become a full-stack web developer or a cybersecurity specialist so that I can work in a field I truly enjoy. Even though there may be pressure in this career, I am determined to pursue it.
+                I am a focused and disciplined person who works consistently and takes responsibility for assigned tasks. I also enjoy exploring new and unique ideas. I am confident that if I continue to develop my skills, I will achieve my goals.</p>
+            </div>
+
+        </div>
+
+    <div data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">    
     <div class="terminal">
       <div class="term-body">
         <p><span class="green"># </span>My name is</p>
         <p class="blue">Phutthawat Boonchotpitakkul</p>
         <p><span class="green"># </span>My age is</p>
-        <p class="blue">17 years old</p>
+        <p class="blue">18 years old</p>
         <p><span class="green"># </span>My location is</p>
         <p class="blue">Nakhonsithamrat, Thailand</p>
         <p><span class="green"># </span>My school is</p>
@@ -49,7 +62,11 @@
       </div>
     </div>
     </section>
-  </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
         
 </body>
 </html>

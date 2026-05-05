@@ -251,7 +251,7 @@ h1 span {
 .about-left p {
     margin: 0;
     color: var(--text-muted);
-    font-size: 1.05rem;
+    font-size: 1.20rem;
     text-align: justify;
 }
 
@@ -280,7 +280,6 @@ h1 span {
 
 .term-body p {
     margin: 10px 0;
-    color: var(--text-primary);
     font-family: 'JetBrains Mono', monospace;
 }
 
@@ -314,10 +313,22 @@ h1 span {
     grid-template-columns: minmax(0, 1fr) 380px;
 }
 
+@media (min-width: 1081px) {
+    .proj-item:nth-child(even) .proj-image {
+        order: 2;
+    }
+.proj-item:nth-child(even) .proj-content {
+        order: 1;
+        text-align: right;
+        align-items: flex-end;
+    }
+}
+
 .proj-image {
     border-radius: 22px;
     overflow: hidden;
-    min-height: 240px;
+    width: 100%;
+    aspect-ratio: 16 / 10;
     background: #0a1221;
     border: 1px solid rgba(255,255,255,0.06);
 }
@@ -329,6 +340,9 @@ h1 span {
     display: block;
     transition: transform 0.45s ease;
 }
+.proj-image img[alt="THNCA"] {
+    object-fit: contain;
+}
 
 .proj-item:hover .proj-image img {
     transform: scale(1.04);
@@ -339,17 +353,17 @@ h1 span {
     flex-direction: column;
     gap: 16px;
 }
-
 .proj-tag {
     display: inline-flex;
     align-items: center;
-    padding: 8px 14px;
+    width: fit-content;        
+    padding: 8px 14px;         
     border-radius: 999px;
     background: rgba(56, 189, 248, 0.12);
     color: #7dd3fc;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
+    font-size: 0.86rem;        
+    letter-spacing: 0.1em;    
     text-transform: uppercase;
 }
 
