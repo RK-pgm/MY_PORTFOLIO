@@ -1,5 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap');
-/* ล้างค่าส่วนเกินที่ทำให้เกิดแถบเลื่อนด้านล่าง */
+
 html, body {
     max-width: 100%;
     overflow-x: hidden; 
